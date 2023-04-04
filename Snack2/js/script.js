@@ -91,5 +91,15 @@ studentList.forEach((student) => {
   student.grades.forEach((grade) => sum += grade);
   console.log(sum)
   media = sum / subjectNum;
-  console.log(studentList.firstname , media)
+  console.log(media)
+})
+
+
+let studentListRemap = studentList.map(student =>{
+
+  let newList = {
+    studentInfo: ` Nome: ${student.firstname}, Cognome: ${student.lastname}, Media voti: ${media}`
+  }
+  console.log(newList)
+  return newList
 })

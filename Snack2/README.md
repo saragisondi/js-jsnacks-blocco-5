@@ -10,3 +10,4 @@ Aggiungere la foto o l’avatar dello studente e stampare tutti gli studenti con
 ## STEPS
 - Creo un elenco di studenti;
 - Calcolo la media dei voti;
+- Creo un nuovo array con il ciclo Map;

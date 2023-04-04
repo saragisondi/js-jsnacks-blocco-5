@@ -1,39 +1,49 @@
-const listUser = [
+const userList = [
   {
-  nome: 'Edoardo',
-  cognome: 'Bianchi',
-  eta: 17,
+  firstname: 'Edoardo',
+  lastname: 'Bianchi',
+  age: 17,
   },
 
   {
-  nome: 'Marco',
-  cognome: 'Giallini',
-  eta: 66,
+  firstname: 'Marco',
+  lastname: 'Giallini',
+  age: 66,
   },
 
   {
-  nome: 'Chiara',
-  cognome: 'Rossi',
-  eta: 15,
+  firstname: 'Chiara',
+  lastname: 'Rossi',
+  age: 15,
   },
 
   {
-  nome: 'Fabio',
-  cognome: 'Volo',
-  eta: 70,
+  firstname: 'Fabio',
+  lastname: 'Volo',
+  age: 70,
   },
 
   {
-  nome: 'Tommaso',
-  cognome: 'Bernini',
-  eta: 10,
+  firstname: 'Tommaso',
+  lastname: 'Bernini',
+  age: 10,
   },
 
   {
-  nome: 'Sara',
-  cognome: 'Gisondi',
-  eta: 30,
+  firstname: 'Paolo',
+  lastname: 'paoletti',
+  age: 80,
   },
 
 
 ]
+
+console.log(userList)
+
+//utenti minorenni
+const under18 = userList.filter(user => user.age < 18);
+console.log(under18)
+
+//utenti over65
+const over65 = userList.filter(user => user.age > 65);
+console.log(over65)

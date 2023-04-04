@@ -1,5 +1,6 @@
 // Ogni studente ha un nome, un cognome, un numero di matricola e un elenco di voti.
-const studentList = [
+let studentList = [
+
 
 {
   firstname: 'Mirko',
@@ -10,8 +11,8 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
+  francese   = 30,
+  ],
 },
 
 {
@@ -23,8 +24,8 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
+  francese   = 30,
+  ],
 },
 
 {
@@ -36,8 +37,8 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
+  francese   = 30,
+  ],
 },
 
 {
@@ -49,8 +50,8 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
+  francese   = 30,
+  ],
 },
 
 {
@@ -62,8 +63,8 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
+  francese   = 30,
+  ],
 },
 
 {
@@ -75,12 +76,20 @@ const studentList = [
   filosofia  = 25,
   psicologia = 20,
   inglese    = 18,
-  francese   = 30
-  ]
-}
+  francese   = 30,
+  ],
+},
 
 ]
 
+//calcolo la media dei voti
 
+let subjectNum = 5;
 
-
+studentList.forEach((student) => {
+  let sum = 0;
+  student.grades.forEach((grade) => sum += grade);
+  console.log(sum)
+  media = sum / subjectNum;
+  console.log(studentList.firstname , media)
+})

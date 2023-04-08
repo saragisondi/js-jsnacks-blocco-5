@@ -88,6 +88,9 @@ let studentList = [
 
 ]
 
+//li metto in ordine alfabetico 
+studentList.sort((a,b) => a.lastname.localeCompare(b.lastname))
+
 //calcolo la media dei voti
 
 let subjectNum = 5;
@@ -110,7 +113,6 @@ let studentListRemap = studentList.map(student =>{
       MediaVoti:` ${media}`
     }
     
- 
 //prendo il container
 const container = document.querySelector('.container')
 console.log(container)  

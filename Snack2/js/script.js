@@ -5,6 +5,7 @@ let studentList = [
 {
   firstname: 'Mirko',
   lastname:  'Martorana',
+  photo: `img/Rkomi.jpg`,
   universityNumber: 01,
   grades: [
   italiano   = 30,
@@ -18,6 +19,7 @@ let studentList = [
 {
   firstname:  'Katia',
   lastname:   'Follesa',
+  photo: `img/katia.webp`,
   universityNumber: 02,
   grades: [
   italiano   = 30,
@@ -31,6 +33,7 @@ let studentList = [
 {
   firstname:   'Fabio',
   lastname:    'Balsamo',
+  photo: `img/fabio.jpg`,
   universityNumber: 03,
   grades: [
   italiano   = 30,
@@ -44,6 +47,7 @@ let studentList = [
 {
   firstname:  'Ciro',
   lastname:   'Priello',
+  photo: `img/ciro.jpg`,
   universityNumber: 04,
   grades: [
   italiano   = 30,
@@ -57,6 +61,7 @@ let studentList = [
 {
   firstname:   'Filippo',
   lastname:      'Fanti',
+  photo: `img/irama.avif`,
   universityNumber: 05,
   grades: [
   italiano   = 30,
@@ -70,6 +75,7 @@ let studentList = [
 {
   firstname: 'Luca',
   lastname:  'Argentero',
+  photo: `img/luca.jpg`,
   universityNumber: 06,
   grades: [
   italiano   = 30,
@@ -93,13 +99,56 @@ studentList.forEach((student) => {
   media = sum / subjectNum;
   console.log(media)
 })
-
+ let grade = media;
+ console.log('media', grade)
 
 let studentListRemap = studentList.map(student =>{
 
   let newList = {
-    studentInfo: ` Nome: ${student.firstname}, Cognome: ${student.lastname}, Media voti: ${media}`
-  }
+      Nome: `${student.firstname}`, 
+      Cognome: `${student.lastname}`, 
+      MediaVoti:` ${media}`
+    }
+    
+ 
+//prendo il container
+const container = document.querySelector('.container')
+console.log(container)  
+
+//creo le card
+for (let i = 0; i < 6; i++) {
+  const card = document.createElement('div');
+
+
+  card.classList.add('card')
+    console.log(card)
+    container.append(card)
+
+
+  const name = document.createElement('h2');
+  name.classList.add('name')
+  card.append(name);
+  name.innerHTML = `${student.firstname} ${student.lastname} `
+
+
+  const media = document.createElement('h3');
+  media.classList.add('media')
+  card.append(media);
+  media.innerHTML = `Media Voti : ${grade}`;
+  console.log(media)
+
+  const img = document.createElement('img');
+  card.append(img);
+  img.src = student.photo;
+  img.innerHTML =  "<img src ='" + student.photo + " ' >"
+
+
   console.log(newList)
   return newList
-})
+    
+}
+
+  })
+
+
+

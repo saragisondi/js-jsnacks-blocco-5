@@ -1,0 +1,30 @@
+/*GENERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  margin-left: 20px;
+}
+
+ul{
+  margin: 20px;
+}
+
+ul li{
+  margin: 0 10px;
+  list-style: none;
+}
+
+.container{
+  width: 60%;
+  border: 1px solid black;
+  margin: 20px;
+}
+

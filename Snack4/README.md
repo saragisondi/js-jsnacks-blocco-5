@@ -10,6 +10,13 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id
 superiore a 120
 
-## STEPS
+<br>
+ 
+1) ## STEPS 
 - Creo un array di oggetti;
 - Creo un nuovo array di nomi con il map;
+- Aggiungo il toUpperCase() per stamparli in maiuscolo;
+
+2) ## STEPS 
+- Creo un array di voti con il map;
+- Creo una condizione per stampare in pagina solo i voti maggiori di 70;

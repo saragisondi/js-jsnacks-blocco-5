@@ -1,4 +1,4 @@
-/*******************STUDENTS*********************************/
+/*****************************************STUDENTS********************************************************/
 const students = [
   {
     id: 213,
@@ -37,22 +37,44 @@ const students = [
   },
 ]
 
-console.log(students)
-
-/******************* NAME STUDENTS*********************************/
+// 1)
+/********************************************* NAME STUDENTS********************************************/
 //creo un array di nomi degli studenti
-const studentsMap = students.map((student) => {
-  return student.name
-})
-console.log(studentsMap)
-
+const studentsMap = students.map((student) => { 
 /*******************CONST**************************************/
-const container = document.querySelector('.container');
+const container = document.querySelector('.container NameList');
 
-for (let i = 0; i < 7; i++) {
-  const card = document.createElement('div');
-  card.classList.add('card')
-  container.append(card)
-  console.log(card)
-}
 
+const nameList = document.querySelector('.name');
+
+const name = document.createElement('li');
+name.innerHTML= student.name.toUpperCase();
+
+nameList.append(name)
+
+return student.name
+
+})
+
+
+// 2)
+const container2 = document.querySelector('.container grades')
+console.log(container2)
+
+const gradeList = document.querySelector('.grade')
+console.log(gradeList)
+
+
+const GradesMap = students.map((student) => {
+  console.log(student.grades)
+
+const grades70 = document.createElement('li');
+
+gradeList.append(grades70)
+  
+  if (student.grades > 70) {
+    console.log(student.name, student.grades)
+    grades70.innerHTML = student.name + ":" +" "+ student.grades
+  }
+
+})

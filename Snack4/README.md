@@ -20,3 +20,8 @@ superiore a 120
 2) ## STEPS 
 - Creo un array di voti con il map;
 - Creo una condizione per stampare in pagina solo i voti maggiori di 70;
+
+
+3) ## STEPS 
+- Creo un array di id con il map;
+- Creo una condizione per stampare in pagina solo i voti maggiori di 70 e con un ID maggiore di 120;

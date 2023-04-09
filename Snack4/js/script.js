@@ -58,23 +58,40 @@ return student.name
 
 
 // 2)
+/*******************CONST**************************************/
 const container2 = document.querySelector('.container grades')
-console.log(container2)
 
 const gradeList = document.querySelector('.grade')
-console.log(gradeList)
 
-
+//creo un array dei voti degli studenti
 const GradesMap = students.map((student) => {
-  console.log(student.grades)
 
 const grades70 = document.createElement('li');
 
 gradeList.append(grades70)
-  
+  //creo una condizione per stamparli in pagina
   if (student.grades > 70) {
-    console.log(student.name, student.grades)
     grades70.innerHTML = student.name + ":" +" "+ student.grades
   }
 
+})
+
+
+// 3)
+/*******************CONST**************************************/
+const container3 = document.querySelector('.container grades-id')
+
+const gradeId = document.querySelector('.gradesid')
+
+
+//creo un array di ID degli studenti
+const id = students.map((student) => {
+const id120 = document.createElement('li');
+
+gradeId.append(id120);
+
+ //creo una condizione per stamparli in pagina
+  if (student.grades > 70 && student.id > 120){
+    id120.innerHTML ="Studente Id: "+ student.id + " " + "voto:" + " " +student.grades
+  }
 })

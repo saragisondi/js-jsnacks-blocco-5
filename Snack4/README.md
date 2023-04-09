@@ -11,4 +11,5 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 superiore a 120
 
 ## STEPS
-- creo un array di oggetti;
+- Creo un array di oggetti;
+- Creo un nuovo array di nomi con il map;

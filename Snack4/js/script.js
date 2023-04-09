@@ -1,3 +1,4 @@
+/*******************STUDENTS*********************************/
 const students = [
   {
     id: 213,
@@ -35,3 +36,23 @@ const students = [
     grades: 84,
   },
 ]
+
+console.log(students)
+
+/******************* NAME STUDENTS*********************************/
+//creo un array di nomi degli studenti
+const studentsMap = students.map((student) => {
+  return student.name
+})
+console.log(studentsMap)
+
+/*******************CONST**************************************/
+const container = document.querySelector('.container');
+
+for (let i = 0; i < 7; i++) {
+  const card = document.createElement('div');
+  card.classList.add('card')
+  container.append(card)
+  console.log(card)
+}
+
